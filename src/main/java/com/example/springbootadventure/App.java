@@ -9,15 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class SpringbootAdventureApplication {
+public class App {
 
   public static void main(String[] args) {
-    SpringApplication.run(SpringbootAdventureApplication.class, args);
+    SpringApplication.run(App.class, args);
   }
-
-   @GetMapping("/hello")
-    public ResponseEntity<String> hello() {
-        return new ResponseEntity<>("hello world", HttpStatus.OK);
-    }
-
 }
